@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8fff2;
+  margin: 0;
+  font-family: "open sans", sans-serif;
+  font-size: 1.5em;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  color: #2995a7;
+}
+
+.sub-title {
+  font-weight: bold;
+}
+
+.orders-list {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.orders-line {
+  background-color: #DFE5DA;
+}
+
+.orders-line:nth-of-type(2n) {
+  background-color: #BABFB5;
+}
+
+.orders-line:hover {
+  background-color: #998882;
+}
+
+.order-number a {
+  color: #7F3734;
+  text-decoration: none;
+  transition: color 300ms;
+}
+
+.order-number:hover a{
+  color: #FFCC5C;
+}
+
+.return {
+  color: #7F3734;
+  text-decoration: none;
+  transition: color 300ms;
+}
+
+.return:hover {
+  color: #FFCC5C;
+}
+
+.client-information {
+  text-align: right;
+}
+
+.price {
+  text-align: right;
+  color: #00968b;
+}

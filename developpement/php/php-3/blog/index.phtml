@@ -1,0 +1,20 @@
+<?php if (array_key_exists("role", $_SESSION)) { ?>
+<p>Bonjour <?= $_SESSION["firstName"]." ".$_SESSION["lastName"] ?></p>
+<?php } ?>
+<h2 class="title"><i class="fas fa-home"></i>Acceuil</h2>
+<ul class="articles-list">
+<?php foreach ($articleInformations as $articleInformation) { ?>
+  <li>
+    <a class="manageArticle" href="article.php?Id=<?= $articleInformation['Id'] ?>"<h3><i class="far fa-hand-point-right"></i> <span class="title"><?= $articleInformation["Title"] ?></span></h3></a>
+    <?php $averageGrade = getAverageGrade($articleInformation['Id']);
+    // var_dump($averageGrade);
+    if ($averageGrade != false) { ?>
+      <strong><?= round($averageGrade["averageGrade"], 1) ?> / 5 <i class="fas fa-heart"></i></strong>
+    <?php }
+    else { ?>
+      <strong class="new">New</strong>
+    <?php } ?>
+    <p>Rédigé par <?= $articleInformation["FirstName"]." ".$articleInformation["LastName"] ?> le <?= $articleInformation["creationTimestamp"] ?></p>
+  </li>
+<?php } ?>
+</ul>

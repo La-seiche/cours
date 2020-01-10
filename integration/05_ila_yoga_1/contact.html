@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Ila Yoga</title>
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/yoga.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-main">
+      <a href="index.html"><i class="fas fa-calendar-alt"></i>Agenda</a>
+      <a href="#"><i class="fas fa-book"></i>Livre d'or</a>
+      <a href="#"><i class="far fa-image"></i>Album photo</a>
+      <a href="#"><i class="fas fa-envelope"></i>Nous contacter</a>
+    </nav>
+    <p class="promo"><span class="offre">Offre promo</span> : Votre premier cours d'essai gratuit</p>
+    <h1 class="title-main">Bienvenue sur le site d'Ila Yoga</h1>
+  </header>
+  <main>
+    <section class="contact">
+    <h2 class="title">Réserver votre place pour le prochain cours de Yoga du rire !</h2>
+    <!-- Tableaux -->
+    <table class="container tableau">
+      <thead>
+        <tr>
+          <th class=table-title colspan="3>">Yoga du rire avec Jacqueline (Paris)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="line">
+          <td>05 Janvier 2016</td>
+          <td class="heure">15h30</td>
+          <td class="creneau"><a href="#">Réserver ce créneau</a></td>
+        </tr>
+        <tr class="line">
+          <td>10 Janvier 2016</td>
+          <td class="heure">16h30</td>
+          <td class=creneau><a href="#">Réserver ce créneau</a></td>
+        </tr>
+        <tr class="line">
+          <td>15 Janvier 2016</td>
+          <td class="heure">15h30</td>
+          <td class="creneau"><a href="#">Réserver ce créneau</a></td>
+        </tr>
+        <tr class="line">
+          <td>20 Janvier 2016</td>
+          <td class="heure">16h30</td>
+          <td class="creneau"><a href="#">Réserver ce créneau</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="container tableau">
+      <thead>
+        <tr>
+          <th class=table-title colspan="3>">Yoga du rire avec Jacqueline (Paris)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="line">
+          <td>05 Janvier 2016</td>
+          <td class="heure">15h30</td>
+          <td class="creneau"><a href="#">Réserver ce créneau</a></td>
+        </tr>
+        <tr class="line">
+          <td>10 Janvier 2016</td>
+          <td class="heure">16h30</td>
+          <td class=creneau><a href="#">Réserver ce créneau</a></td>
+        </tr>
+        <tr class="line">
+          <td>15 Janvier 2016</td>
+          <td class="heure">15h30</td>
+          <td class="creneau"><a href="#">Réserver ce créneau</a></td>
+        </tr>
+        <tr class="line">
+          <td>20 Janvier 2016</td>
+          <td class="heure">16h30</td>
+          <td class="creneau"><a href="#">Réserver ce créneau</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <!-- Formulaires -->
+  <section>
+    <h2 class="title">Pour valider votre réservation, compléter ce formulaire :</h2>
+    <form>
+      <fieldset>
+        <legend class="title">Vos coordonnées</legend>
+        <label>Votre prénom :</label>
+        <input type="text" name="lastName" placeholder="Tappez ici"/>
+        <label>Votre nom :</label>
+        <input type="text" name="firstName" placeholder="Tappez ici"/>
+        <label>Votre mail :</label>
+        <input type="email" name="email" placeholder="Tappez ici"/>
+      </fieldset>
+      <fieldset>
+        <legend class="title">Quelles sont les raisons de votre venue ?</legend>
+        <label for="relax">Besoin de me détendre</label>
+        <input type="checkbox" name="relax" id="relax"/>
+        <label for=doctor>Mon médecin m'a conseillé de venir</label>
+        <input type="checkbox" name="doctor" id="doctor">
+        <label for="friend">Je veux tester avec des amis</label>
+        <input type="checkbox" name="friend" id="friend">
+      </fieldset>
+      <fieldset>
+        <legend class="title">Voulez-vous souscrire à notre programme de fidélité ?</legend>
+        <label for="yes">Oui</label>
+        <input type="radio" name="subscribe" id="yes" value="sub-yes"/>
+        <label for="no">Non</label>
+        <input type="radio" name="subscribe" id="no" value="sub-no"/>
+        <label for="maybe">Peut être</label>
+        <input type="radio" name="subscribe" id="maybe" value="sub-maybe"/>
+      </fieldset>
+      <fieldset>
+        <legend class="title">Comment avez-vous connu Ila Yoga ?</legend>
+        <select name="know">
+        <option value="internet">Par internet</option>
+        <option value="magazine">Un magazine</option>
+        <option value="pub">Une pub</option>
+      </select>
+      </fieldset>
+      <fieldset>
+        <legend class="title">Votre avis nous intéresse</legend>
+        <label>Que pensez vous du yoga ?</label>
+        <textarea name="message"></textarea>
+      </fieldset>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+  </main>
+  <footer class="footer">
+    <img class="logo-footer" src="https://as2.ftcdn.net/jpg/01/44/25/17/500_F_144251706_7w8N2v9ACjJNr7GU4bVORWRj6COSWaiU.jpg" alt="logo"/>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </footer>
+</body>
+</html>

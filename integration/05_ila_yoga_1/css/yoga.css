@@ -1,0 +1,200 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #eee;
+  line-height: 1.4;
+  color: #444;
+  font-family: "playfair display", serif;
+  background-color: #eee;
+}
+img{
+  max-widh: 100%;
+  height: auto;
+}
+.container{
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.nav-main,
+.title-main,
+.table-title{
+  font-family: "kaushan script", cursive;
+}
+.title{
+  text-align: center;
+  font-weight: normal;
+}
+
+/* ***************** */
+/* Le header */
+/* ***************** */
+
+.header{
+  background-image: url(../img/fond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-bottom: 20%;
+  text-align: center;
+  color: #fff;
+  /* height: 800px; */ Eviter d'utliser la propriété height
+}
+.nav-main{
+  font-size: 1.5em;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 40px 0;
+}
+.nav-main a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.nav-main .fas,
+.nav-main .far{
+  display: block;
+}
+.promo{
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+}
+.offre{
+  text-transform: uppercase;
+}
+.title-main{
+  font-size: 2em;
+  text-shadow: 1px 1px 8px #000;
+}
+
+/* ***************** */
+/* Page d'acceuil */
+/* ***************** */
+
+/* Bloc de bienvenue */
+
+.grey{
+  padding-top: 50px;
+}
+.bienvenue{
+  /* padding: 20px; */
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.bienvenue:nth-of-type(2n) img{
+  float: right;
+}
+.bienvenue img{
+  float: left;
+}
+.cours--yoga{
+  /* float: left; */
+  margin-right: 10px;
+}
+/* .separator{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  color: #3b5062;
+} */
+.posture--yoga{
+  /* float: right; */
+  margin-left: 10px;
+}
+
+/* Bloc de présentation */
+
+.presentation{
+  background-image: url(../img/background_section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 50vw;
+}
+.info{
+  background-color: orangered;
+  width: 32%;
+  display: inline-block;
+  text-align: center;
+  padding: 40px;
+  color: #fff;
+  /* margin-right: 0.6666%;
+  margin-left: 0.6666%; */
+  vertical-align: top;
+}
+.info:nth-of-type(3n+1){
+  margin-right: 2%;
+}
+.info:nth-of-type(3n+3){
+  margin-left: 2%;
+}
+
+/* Carte */
+
+.maps{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* ***************** */
+/* Page de contact */
+/* ***************** */
+
+/* Tableaux */
+
+.table-title{
+  background-color: #c4a5de;
+  color: #fff;
+  text-align: left;
+  padding: 10px 15px;
+  border: 1px solid #c4a5de;
+}
+.line:nth-of-type(2n+1){
+  background-color: #fff;
+}
+.line:nth-of-type(2n){
+  background-color: #f2f2f2;
+}
+.tableau{
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.tableau td{
+  border: 1px solid #cccccc;
+  padding: 5px;
+}
+.heure{
+  text-align: center;
+}
+.creneau{
+  text-align: center;
+}
+.creneau a{
+  text-decoration: none;
+  color: #8c5bc6;
+}
+
+/* Formulaires */
+
+/* ***************** */
+/* Footer */
+/* ***************** */
+
+.footer{
+  text-align: center;
+  background-image: url(../img/background_section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer p{
+  margin: 0;
+}
+.logo-footer{
+  width:75px;
+}

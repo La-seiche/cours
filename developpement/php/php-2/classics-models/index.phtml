@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Classics Models</title>
+    <link rel="stylesheet" href="classics.css">
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="title">Bons de commande</h1>
+    </header>
+    <main class="container">
+      <table class="orders-list">
+        <caption class="sub-title">Liste des commandes</caption>
+        <thead>
+          <tr>
+            <th class="title">Commande</th>
+            <th class="title">Date de commande</th>
+            <th class="title">Date de livraison</th>
+            <th class="title">Statut</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach ($orders as $order) { ?>
+            <tr class="orders-line">
+              <th class="order-number"><a href="order.php?orderNumber=<?=$order['orderNumber']?>"><?=$order["orderNumber"]?></a></th>
+              <th><?=$order["orderDate"]?></th>
+              <th><?=$order["shippedDate"]?></th>
+              <th><?=$order["status"]?></th>
+            </tr>
+          <?php } ?>
+        </tbody>
+    </main>
+  </body>
+</html>

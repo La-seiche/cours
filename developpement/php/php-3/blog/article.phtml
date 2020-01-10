@@ -1,0 +1,41 @@
+<h2 class="title"><i class="far fa-file-alt"></i>Article</h2>
+<h3><?= $articleInformations["Title"] ?></h3>
+<p><?= $articleInformations["Contents"] ?></p>
+<p>Rédigé par <?= $articleInformations["FirstName"]." ".$articleInformations["LastName"] ?> le <?= $articleInformations["creationTimestamp"] ?></p>
+<hr>
+<ul>
+  <?php foreach ($comments as $comment) { ?>
+    <h4><i class="far fa-comment"></i> Rédigé par <?= $comment["Nickname"] ?></h4>
+    <p><?= $comment["Contents"] ?></p>
+  <?php } ?>
+</ul>
+<?php if (array_key_exists("role", $_SESSION)) { ?>
+<hr>
+<form class="comment" action="article.php?Id=<?= $articleInformations['Id'] ?>" method="post">
+  <fieldset class="comment-fieldset">
+    <legend><i class="far fa-comment"></i> Nouveau commentaire</legend>
+  <ul class="comment-list">
+    <li class="comment-items">
+      <label for="nickname">Pseudo:</label>
+      <input type="text" name="nickname" id="nickname">
+    </li>
+    <li class="comment-items">
+      <label for="comment">Commentaire:</label>
+      <textarea name="comment" name="comment" id="comment"></textarea>
+    </li>
+    <li class="comment-items">
+      <label for="grade">Note :</label>
+      <select name="grade" id="grade">
+      <?php for ($i = 0; $i <= 5; $i++) { ?>
+        <option value="<?= $i ?>"><?= $i ?></option>
+      <?php } ?>
+      </select>
+    </li>
+    <li class="button">
+      <input class="cta send"type="submit" value="Ajouter">
+      <input class="cta cancel" type="reset" value="Annuler">
+    </li>
+  </ul>
+  </fieldset>
+</form>
+<?php } ?>

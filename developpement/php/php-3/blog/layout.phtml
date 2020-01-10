@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog!</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="blog.css">
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.php"><h1 class="title main-title"><i class="fas fa-microphone"></i>Encore un blog ?! #Nonmaisallo</h1></a>
+      <?php if (array_key_exists("role", $_SESSION)) { ?>
+        <?php if ($_SESSION["role"] === "admin") { ?>
+        <a class="administration-link" href="admin.php"><i class="fas fa-cogs"></i> Administration</a>
+      <?php } ?>
+        <a class="logout" href="logout.php"><i class="fas fa-door-open"></i> Déconnexion</a>
+      <?php } else { ?>
+        <a class="logout" href="login.php"><i class="fas fa-door-open"></i> Connexion</a>
+      <?php } ?>
+    </header>
+    <main class="container">
+      <?php include $template.".phtml"; ?>
+    </main>
+    <footer class="container">
+      <p>Le blog des élèves de la 3W Academy</p>
+    </footer>
+  </body>
+</html>

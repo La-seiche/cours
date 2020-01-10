@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --title-color: #01a2a6;
+  --hover-color: #bdf271;
+}
+
+body {
+  margin: 0;
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background-image: url(img/paper.png);
+  background-size: contain;
+}
+
+.container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  color: var(--title-color);
+}
+
+.header {
+  background-color: #2f2932;
+  text-align: right;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  border-bottom: 5px solid var(--title-color);
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+.main-title {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  transition: color 300ms;
+}
+
+.main-title:hover {
+  color: var(--hover-color);
+}
+
+.administration-link,
+.logout {
+  margin-right: 30px;
+  transition: color 300ms;
+}
+
+.administration-link:hover,
+.logout:hover {
+  color: var(--hover-color);
+}
+
+.comment {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.comment-fieldset {
+  border-color: var(--title-color);
+}
+
+.comment legend {
+  color: var(--title-color);
+}
+
+.comment-list {
+  list-style: none;
+}
+
+.comment-items {
+  margin-bottom: 10px;
+}
+
+.comment label {
+  display: inline-block;
+  width: 17%;
+  text-align: right;
+}
+
+.comment-items input,
+.comment-items textarea,
+.comment-items select {
+  width: 70%
+}
+
+label {
+  vertical-align: top;
+}
+
+.button {
+  text-align: center;
+}
+
+.cta {
+  border-radius: 5px;
+  color: #fff;
+  padding: 5px;
+}
+
+.send {
+  background-color: #339966;
+}
+
+.cancel {
+  background-color: #f73202;
+}
+
+.articles-list {
+  list-style: none;
+}
+
+.articles-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.manageArticle,
+.fa-pencil-alt,
+.fa-trash-alt,
+.register {
+  text-decoration: none;
+  color: var(--title-color);
+  transition: color 300ms;
+}
+
+.manageArticle:hover,
+.fa-pencil-alt:hover,
+.fa-trash-alt:hover,
+.register:hover  {
+  color: #29d9c2;
+}
+
+.fa-heart,
+.new {
+  color: #e12929;
+}

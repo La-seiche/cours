@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <div>
+            <?php foreach ($tasks as $task) { ?>
+
+            <p><?= $task[0] ?> <?= $task[1] ?> <?= $task[2] ?></p>
+
+            <?php } ?>
+        </div>
+        <div>
+            <?php foreach ($tabs as $canard) { ?>
+            <?php // for($i = 0; $i < count($tabs); $i++)?>
+                <p><?=$canard ?></p>
+                <?php // $tabs[$i]?>
+
+            <?php } ?>
+        </div>
+    </body>
+</html>

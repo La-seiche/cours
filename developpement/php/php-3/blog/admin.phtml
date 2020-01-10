@@ -1,0 +1,25 @@
+<h2 class="title"><i class="fas fa-cogs"></i>Panneau d'administration</h2>
+<a class="manageArticle" href ="new-article.php">Rédiger un nouvel article</a>
+<table>
+  <caption>Liste des articles</caption>
+  <thead>
+    <tr>
+      <th>Titre</th>
+      <th>Article</th>
+      <th>Auteur</th>
+      <th>Catégorie</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($articleInformations as $articleInformation) { ?>
+      <tr>
+        <td><a class="manageArticle" href="article.php?Id=<?= $articleInformation["Id"] ?>"><?= $articleInformation["Title"] ?></a></td>
+        <td><?= substr($articleInformation["Contents"], 0, 10) ?> [...]</td>
+        <td><?= $articleInformation["FirstName"]." ".$articleInformation["LastName"] ?></td>
+        <td><?= $articleInformation["Name"] ?></td>
+        <td><a href="edit-article.php?Id=<?= $articleInformation["Id"] ?>"<i class="fas fa-pencil-alt"></i></td>
+        <td><a href="delete.php?Id=<?= $articleInformation["Id"] ?>" <i class="far fa-trash-alt"></i></td>
+      </tr>
+    <?php } ?>
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+body{
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.rectangle{
+  background-color: royalblue;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  transition: 300ms;
+}
+.good{
+  background-color: limegreen;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  transition: 300ms;
+}
+.important{
+  background-color: firebrick;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  transition: 300ms;
+}

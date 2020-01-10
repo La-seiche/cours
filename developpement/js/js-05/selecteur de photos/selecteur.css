@@ -1,0 +1,24 @@
+body{
+  width: 800px;
+}
+#nb{
+  font-style: italic;
+  font-weight: bold;
+  color: tomato;
+}
+#photo-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-item{
+  list-style-type: none;
+  margin: 1em;
+  padding: 0.5em;
+  transition: 300ms;
+}
+.hover{
+  background-color: silver;
+}
+.selected{
+  background-color: forestgreen;
+}

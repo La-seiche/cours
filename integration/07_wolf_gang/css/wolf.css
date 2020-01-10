@@ -1,0 +1,255 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #444444;
+  background-image: url(../img/bg_body.svg);
+  font-family: "open sans", sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+video{
+  max-width: 100%;
+}
+.container{
+  width: 90%;
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.title,
+.nav-main{
+  font-family: "bodega sans", sans-serif;
+}
+.title{
+  text-transform: uppercase;
+  font-weight: normal;
+}
+span{
+  color: #f99d02;
+}
+
+/* ******************* */
+/* Header */
+/* ******************* */
+
+.header{
+  background-image: linear-gradient(135deg, #fff 0%, #fff 50%,#333 50%, #333 100% );
+  overflow: hidden;
+}
+.nav-main{
+  float: right;
+}
+.nav-item{
+  list-style-type: none;
+  text-align: right;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.nav-main a{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ******************* */
+/* Page Accueil */
+/* ******************* */
+
+.title--main{
+  text-align: center;
+  font-size: 2rem;
+}
+.title--secondary{
+  border-top: 3px solid #3f3f3f;
+  border-left: 3px solid #3f3f3f;
+  padding: 10px 0 0 10px;
+}
+.product{
+  width: 23%;
+  display: inline-block;
+  vertical-align: top;
+  background-color:#fff;
+  color: #222;
+  text-align: center;
+  padding: 0 20px 20px;
+  margin-bottom: 10px;
+}
+.product:nth-of-type(4n+2){
+  margin-left: 2.6666%;
+  margin-right: 1.3333%;
+}
+.product:nth-of-type(4n+3){
+  margin-right: 2.6666%;
+  margin-left: 1.3333%;
+}
+.title--product{
+  margin: 0;
+  color: #f99d02;
+  border-bottom: 1px solid #f99d02;
+}
+.cta{
+  background-color: #f99d02;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+.details{
+  width: 48.6666%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2.6668%;
+}
+.video{
+  width: 48.6666%;
+  display: inline-block;
+  margin-bottom: 100px;
+}
+.discover{
+  margin-top: 80px;
+  padding: 0;
+}
+.social-media{
+  list-style-type: none;
+  display: inline-block;
+}
+.social-media a{
+  color: #fff;
+  margin: 0 50px;
+}
+
+/* ******************* */
+/* Footer */
+/* ******************* */
+
+.footer{
+  border-top: 3px solid #3f3f3f;
+  text-align: center;
+  box-shadow: 0 0 25px 15px #3f3f3f;
+  padding: 50px 30px;
+}
+.nav-footer-item{
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+.nav-footer-item a{
+  color: #fff;
+}
+.the-end{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.logo-footer{
+  width: 100px;
+}
+
+/* ******************* */
+/* Importation police */
+/* ******************* */
+
+@font-face{
+  font-family: "bodega Sans";
+  src: url("../fonts/BodegaSans_Black.ttf");
+}
+
+/* ******************* */
+/* Responsive */
+/* ******************* */
+
+/* ******************* */
+/* Tablette */
+/* ******************* */
+
+@media (max-width: 1024px){
+
+  .container{
+    width: 90%;
+  }
+
+/* Header */
+
+  .header{
+    width: 95%;
+    margin-top: 2.5%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+/* Page d'acceuil */
+
+  .product{
+    width: 49%;
+    vertical-align: top;
+  }
+  .product:nth-of-type(4n+2){
+    margin: 0 0 10px;
+  }
+  .product:nth-of-type(4n+3){
+    margin: 0 0 10px;
+  }
+  .product:nth-of-type(2n+1){
+    margin-right: 2%;
+  }
+  .details{
+    display: block;
+    width: 100%;
+  }
+  .discover{
+    margin: 0;
+  }
+  .social-media{
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px
+  }
+  .video{
+    display: block;
+    width: 100%;
+  }
+
+/* Footer */
+
+  .footer{
+    width: 92%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2.5%;
+  }
+}
+
+/* ******************* */
+/* Mobile */
+/* ******************* */
+
+@media (max-width: 768px){
+
+/* Header */
+
+  .header{
+    background-image: linear-gradient(165deg, #fff 0%, #fff 50%,#333 50%, #333 100% );
+  }
+  .nav-main{
+    float: none;
+  }
+
+/* Page d'acceuil */
+
+  .product{
+    display:block;
+    width: 100%;
+  }
+  .product:nth-of-type(4n+2){
+    margin: 2.5% 0 1.25% 0;
+  }
+  .product:nth-of-type(4n+3){
+    margin: 1.25% 0 2.5% 0;
+  }
+}

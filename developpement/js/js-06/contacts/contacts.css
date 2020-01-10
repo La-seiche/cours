@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3edd3;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  /* max-width: 1200px; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  color: #113f59;
+}
+
+.buttons-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.buttons-list li {
+  margin-right: 10px;
+}
+
+.informations-list {
+  list-style: none;
+  border-top: 1px solid #a59a86;
+  padding-top: 15px;
+}
+
+.informations-list label {
+  color: #31adbd;
+  display: inline-block;
+  width: 6em;
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}

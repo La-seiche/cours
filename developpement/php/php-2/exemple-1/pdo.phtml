@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            <ul>
+                <?php foreach($employees as $employee) {?>
+                    <li>
+                        <span><?=$employee['firstName']?></span><span><?=$employee['lastName']?></span>
+                    </li>
+                <?php } ?>
+            </ul>
+            <p><?= $office["addressLine1"]." " ?><?= $office["addressLine2"]." " ?><?= $office["postalCode"]." " ?><?= $office["state"]." " ?><?= $office["city"]." " ?></p>
+        </div>
+    </body>
+</html>

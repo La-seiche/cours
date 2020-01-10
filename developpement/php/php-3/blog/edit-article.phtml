@@ -1,0 +1,20 @@
+<h2 class="title"><i class="fas fa-pencil-alt"></i> Modifier un article</h2>
+<form class="comment" action="edit-article.php?Id=<?= $articleId ?>" method="post">
+  <fieldset class="comment-fieldset">
+    <legend><i class="far fa-sticky-note"></i> Modifier article</legend>
+  <ul class="comment-list">
+    <li class="comment-items">
+      <label for="title">Titre:</label>
+      <input type="text" name="title" id="title" value="<?= $articleInformations['Title'] ?>">
+    </li>
+    <li class="comment-items">
+      <label for="content">Article:</label>
+      <textarea name="content" name="content" id="content" rows="15"><?= $articleInformations["Contents"] ?></textarea>
+    </li>
+    <li class="button">
+      <input class="cta send"type="submit" value="Enregistrer">
+      <input class="cta cancel" type="reset" value="Annuler">
+    </li>
+  </ul>
+  </fieldset>
+</form>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>PHP</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="05-exercice-traducteur.css">
+</head>
+<body>
+    <h1>Formation de coiffure</h1>
+
+    <main>
+       <p>Prénom <?= $studient['firstName']?></p>
+                
+        <form method="POST" action="post.php">
+            <input type="text" name="firstName" placeholder="prénom"/>
+            <input type="text" name="age" placeholder="age"/>
+            <input type="submit" value="Submit"/>
+        </form>
+    </main>
+</body>
+</html>

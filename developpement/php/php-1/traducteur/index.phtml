@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Traducteur français-anglais</title>
+  </head>
+  <body>
+    <h1>Traducteur Anglais - Français</h1>
+    <?php if($traduction == null) { ?>
+    <form method="POST" action="traducteur.php">
+      <label for="mot">Mot:</label>
+      <input type="texte" name="mot" id="mot"/>
+      <label for="sens">Sens de traduction: </label>
+      <select name="sens" id="sens">
+        <option value="fr-ang">Français vers Anglais</option>
+        <option value="ang-fr">Anglais vers Français</option>
+      </select>
+      <input type="submit" value="Traduire"/>
+    </form>
+  <?php } else { ?>
+
+          <p>Le mot à traduire est <?= $mot ?> et sa traduction est <?= $traduction ?></p>
+
+      <?php } ?>
+
+  </body>
+</html>

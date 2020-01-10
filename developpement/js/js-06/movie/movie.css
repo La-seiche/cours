@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Alatsi', sans-serif;
+}
+
+.header {
+  text-align: center;
+  background-image: url("http://www.slate.fr/sites/default/files/styles/1060x523/public/cinema-prix-billets.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 200px;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-family: 'Bangers', cursive;
+}
+
+.main-title {
+  font-size: 50px;
+  position: relative;
+  bottom: 135px;
+  color: #880c0f;
+}
+
+#movie-search {
+  margin-bottom: 20px;
+}
+
+.search-results {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.result {
+  width: 20%;
+}
+
+.results-list {
+  border: 2px solid;
+  padding: 20px;
+}
+
+.movie-details {
+  width: 60%;
+}
+
+.details-list {
+  border: 2px solid;
+}

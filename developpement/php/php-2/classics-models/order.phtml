@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Commande</title>
+    <link rel="stylesheet" href="classics.css">
+  </head>
+  <body>
+    <header class="container">
+      <h1 class="title">Bons de commande</h1>
+      <a class="return" href="classics.php">Retourner à l'acceuil</a>
+      <div class="client-information">
+        <h2><?=$client["customerName"]?></h2>
+        <p><?=$client["contactLastName"]." ".$client["contactFirstName"]?></p>
+        <p><?=$client["addressLine1"]?></p>
+        <p><?=$client["city"]?></p>
+      </div>
+    </header>
+    <main class="container">
+      <table class="orders-list">
+        <caption class="sub-title">Bon de commande n°<?=$orderNumber?></caption>
+        <thead>
+          <tr>
+            <th class="title">Produit</th>
+            <th class="title">Prix Unitaire</th>
+            <th class="title">Quantité</th>
+            <th class="title">Prix Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php foreach($order as $currentOrder) { ?>
+            <tr class="orders-line">
+              <th><?= $currentOrder["productName"] ?></th>
+              <th><?= $currentOrder["priceEach"] ?></th>
+              <th><?= $currentOrder["quantityOrdered"] ?></th>
+              <th><?= $currentOrder["priceEach"] * $currentOrder["quantityOrdered"] ?></th>
+            </tr>
+          <?php } ?>
+          <tr class="orders-line price">
+            <th colspan="3">Montant Total</th>
+            <th><?= $totalPrice ?></th>
+          </tr>
+          <tr class="orders-line price">
+            <th colspan="3">TVA (20%)</th>
+            <th><?= $amountTVA ?></th>
+          </tr>
+          <tr class="orders-line price">
+            <th colspan="3">Montant Total TTC</th>
+            <th><?= $totalTTC ?></th>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

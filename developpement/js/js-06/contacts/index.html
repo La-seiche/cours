@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Carnet d'adresses</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="contacts.css">
+  </head>
+  <body>
+    <header class="header container">
+      <h1 class="title"><i class="fas fa-book"></i> Carnet d'Adresses</h1>
+      <section class="contacts-list">
+        <ul>
+
+        </ul>
+        <div class="details hide">
+
+        </div>
+      </section>
+      <ul class="buttons-list">
+        <li><button id="add" type="button" name="add"><i class="fas fa-plus"></i></button></li>
+        <li><button id="deleteAll" type="button" name="delete"><i class="fas fa-trash-alt"></i></button></li>
+      </ul>
+    </header>
+    <main class="container">
+      <form>
+        <ul class="informations-list hide">
+          <li>
+            <label for="civility">Civilité :</label>
+            <select name="civility" id="civility">
+              <option value="madame">Madame</option>
+              <option value="mademoiselle">Mademoiselle</option>
+              <option value="monsieur">Monsieur</option>
+            </select>
+          </li>
+          <li>
+            <label for="lastName">Nom :</label>
+            <input type="text" name="lastName" id="lastName">
+          </li>
+          <li>
+            <label for="firstName">Prénom :</label>
+            <input type="text" name="firstName" id="firstName">
+          </li>
+          <li>
+            <label for="telephone">Téléphone :</label>
+            <input type="text" name="telephone" id="telephone">
+          </li>
+          <li>
+            <input id="save" type="submit" value="Enregistrer">
+          </li>
+        </ul>
+      </form>
+    </main>
+  <script src="contacts.js"></script>
+  </body>
+</html>

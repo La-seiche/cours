@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To do list</title>
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Gestionnaire de tâches :-)</h1>
+      <form class="tasks-list" method="POST" action="todo.php">
+        <!-- <input class="cta" type="submit" value="Supprimer"> -->
+      </form>
+      <form method="POST" action="todo.php">
+        <fieldset class="new-task">
+          <legend>Informations sur la tâche</legend>
+          <ul>
+            <li>
+              <label for="titre">Titre :</label>
+              <input type="texte" name="titre" id="titre">
+            </li>
+            <li>
+              <label for="tache">Tâche :</label>
+              <textarea name="tache" id="tache"></textarea>
+            </li>
+            <li>
+              <label for="day">Date de fin :</label>
+                  <select id="day" name="day">
+                      <?php for($day = 1; $day <= 31; $day++): ?>
+                      <option value="<?= $day ?>"><?= $day ?></option>
+                      <?php endfor ?>
+                    </select>
+                    <span>/</span>
+                    <select name="month">
+                        <option value="1">Janvier</option>
+                        <option value="2">Février</option>
+                        <option value="3">Mars</option>
+                        <option value="4">Avril</option>
+                        <option value="5">Mai</option>
+                        <option value="6">Juin</option>
+                        <option value="7">Juillet</option>
+                        <option value="8">Août</option>
+                        <option value="9">Septembre</option>
+                        <option value="10">Octobre</option>
+                        <option value="11">Novembre</option>
+                        <option value="12">Décembre</option>
+                    </select>
+                    <span>/</span>
+                    <select name="year">
+                        <?php for($year = 2019; $year <= 2025; $year++): //{ ?>
+                        <option value="<?= $year ?>"><?= $year ?></option>
+                        <?php endfor // } ?>
+                    </select>
+            </li>
+            <li>
+              <label for="priorite">Priorité :</label>
+              <label for="basse">Basse</label>
+              <input type="radio" name="priorite" value="Basse" id="basse">
+              <label for="normale">Normale</label>
+              <input type="radio" name="priorite" value="Normale" id="normale">
+              <label for="haute">Haute</label>
+              <input type="radio" name="priorite" value="Haute" id="haute">
+            </li>
+          </ul>
+          <input class="cta" type="submit" value="Ajouter">
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

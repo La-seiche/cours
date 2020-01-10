@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #ecf0f1;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-title {
+  color: #E74C3C;
+}
+
+.result {
+  border: 1px solid #3498DB;
+  border-radius: 5px;
+  padding: 1em;
+
+}
+
+.result p {
+  margin: 0;
+}
+
+.task-choice {
+  border: 1px solid #3498DB;
+  border-radius: 5px;
+  color: #3498DB;
+}
+
+.lorem {
+  color: #3498DB;
+}
+
+.choice-list {
+  list-style: none;
+}
+
+.movies-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.movies-list li {
+  width: 25%;
+}

@@ -1,0 +1,36 @@
+<h2 class="title"><i class="fas fa-pencil-alt"></i> Rédiger un nouvel article</h2>
+<form class="comment" action="new-article.php" method="post">
+  <fieldset class="comment-fieldset">
+    <legend><i class="far fa-sticky-note"></i> Nouvel article</legend>
+  <ul class="comment-list">
+    <li class="comment-items">
+      <label for="title">Titre:</label>
+      <input type="text" name="title" id="title">
+    </li>
+    <li class="comment-items">
+      <label for="content">Article:</label>
+      <textarea name="content" name="content" id="content" rows="15"></textarea>
+    </li>
+    <li class="comment-items">
+      <label for="author">Auteur :</label>
+      <select name="author" id="author">
+        <?php foreach ($authorList as $authorItem) { ?>
+          <option value="<?= $authorItem['Id'] ?>"><?= $authorItem["FirstName"]." ".$authorItem["LastName"] ?></option>
+        <?php } ?>
+      </select>
+    </li>
+    <li class="comment-items">
+      <label for="category">Catégorie :</label>
+      <select name="category" id="category">
+        <?php foreach ($categoryList as $categoryItem) { ?>
+          <option value="<?= $categoryItem['Id'] ?>"><?= $categoryItem["Name"] ?></option>
+        <?php } ?>
+      </select>
+    </li>
+    <li class="button">
+      <input class="cta send"type="submit" value="Enregistrer">
+      <input class="cta cancel" type="reset" value="Annuler">
+    </li>
+  </ul>
+  </fieldset>
+</form>
